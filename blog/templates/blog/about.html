@@ -1,0 +1,26 @@
+{% extends "blog/base.html" %}
+{% block content %}
+ <div style="color:black;">
+
+  <h4 style="color:black;"><b>Create anything!</b></h4>
+  <p style="color:black;">WordPress.com allows you to build any kind of site you want: business site, blog, portfolio, the sky is the limit!</p>
+  <div class="row">
+  <div class="column">
+    <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/showcase/india-small-business-2x.jpg" alt="Snow" style="width:70%">
+  </div>
+</div>
+  <br><br>
+  <h4 style="color:black;"><b>Features you will love</b></h4>
+  <dl>
+<dt>Easy to Use</dt>
+<dd>Creating and managing your website is simple with WordPress.com’s powerful platform. <br>Get started in minutes and make changes to your site easily.</dd>
+<dt>Outstanding design</dt>
+<dd>Find a unique style for your site: WordPress.com features hundreds of beautiful themes.</dd>
+<dt>The best support</dt>
+<dd>Our Happiness Engineers work 24*7 through live chat, email, support pages, and forums to answer any questions you have.</dd>
+<dt>Powerful statistics</dt>
+<dd>Keep your finger on the pulse and learn more about your readers.<br> See where they’re from and how they found you, with colourful maps and graphs that beautifully present your stats.</dd>
+</dl>
+  <br>Sign Up now<a class="ml-2" href="{% url 'register' %}">register</a>
+</div>
+{% endblock content %}

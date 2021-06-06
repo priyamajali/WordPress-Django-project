@@ -1,0 +1,16 @@
+{% extends "blog/base.html" %}
+{% block content %}
+    {% for post in posts %}
+        <article class="media content-section">
+
+          <div class="media-body">
+            <div class="article-metadata">
+              <p class="mr-2" >By {{ post.author }}</p>
+              <i><small class="text-muted">{{ post.date_posted|date:"F d, Y" }}</small></i>
+            </div>
+            <b><p><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></p></b>
+
+          </div>
+        </article>
+    {% endfor %}
+{% endblock content %}
